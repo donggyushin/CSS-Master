@@ -10,8 +10,7 @@
     <style>
         .father{
             display: grid;
-            grid-auto-rows: 280px;
-            grid-template-columns: minmax(280px, 2fr) repeat(3, 1fr);
+            grid-template-columns: min-content repeat(3, 1fr);
         }
 
         .first{
@@ -33,7 +32,7 @@
 </head>
 <body>
     <div class="father">
-        <div class="first"></div>
+        <div class="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo perferendis neque deleniti quis tempora labore eum autem ab! Excepturi tenetur possimus odit sint facere reiciendis officia fuga impedit, expedita voluptates.</div>
         <div class="second"></div>
         <div class="third"></div>
         <div class="forth"></div>
