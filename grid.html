@@ -10,32 +10,40 @@
     <style>
         .father{
             display: grid;
-            grid-template-columns: 70px 120px;
-            grid-template-rows: 70px 28px;
-            grid-gap: 5px;
-            grid-auto-columns: 60px;
-            grid-auto-flow: column;
+            grid-auto-rows: 200px;
+            grid-template-areas: "header header header"
+                                 "content content sidebar"
+                                 "content content sidebar"
+                                 "footer footer footer";
         }
 
-        .box{
+        .first{
+            grid-area: footer;
             background-color: #f1c40f;
-            color: white;
-            font-size: 2rem;
+        }
+
+        .second {
+            grid-area: sidebar;
+            background-color: #1abc9c;
+        }
+
+        .third {
+            grid-area: content;
+            background-color: #3498db;
+        }
+
+        .forth {
+            grid-area: header;
+            background-color: #9b59b6;
         }
     </style>
 </head>
 <body>
     <div class="father">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+        <div class="first"></div>
+        <div class="second"></div>
+        <div class="third"></div>
+        <div class="forth"></div>
     </div>
 </body>
 </html>
