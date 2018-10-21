@@ -10,32 +10,42 @@
     <style>
         .father{
             display: grid;
-            grid-template-columns: min-content repeat(3, 1fr);
+            grid-auto-rows: 150px;
+            grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+            grid-gap: 5px;
         }
 
-        .first{
+        .box:nth-child(even){
             background-color: #f1c40f;
         }
 
-        .second {
-            background-color: #1abc9c;
-        }
-
-        .third {
-            background-color: #3498db;
-        }
-
-        .forth {
-            background-color: #9b59b6;
+        .box:nth-child(odd){
+            background-color: #e67e22;
         }
     </style>
 </head>
 <body>
     <div class="father">
-        <div class="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo perferendis neque deleniti quis tempora labore eum autem ab! Excepturi tenetur possimus odit sint facere reiciendis officia fuga impedit, expedita voluptates.</div>
-        <div class="second"></div>
-        <div class="third"></div>
-        <div class="forth"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
     </div>
 </body>
 </html>
