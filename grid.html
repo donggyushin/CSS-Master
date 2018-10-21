@@ -11,11 +11,9 @@
         .father{
             display: grid;
             grid-auto-rows: 100px;
-            grid-template-columns: [first-line] 1fr [second-line] 1fr [third-line] 1fr [fourth-line] 1fr [fifth-line] 1fr;
             grid-gap: 5px;
             color: white;
-            grid-auto-flow: row dense;
-            
+            grid-template-columns: repeat(5, 1fr);
         }
 
         .box {
@@ -33,8 +31,8 @@
         }
 
         .box:first-child{
-            grid-column-start: second-line;
-            grid-column-end: fourth-line;
+            grid-row: span 3;
+            grid-column: span 3;
         }
     </style>
 </head>
