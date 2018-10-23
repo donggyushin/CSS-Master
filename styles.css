@@ -1,53 +1,194 @@
-/* li:matches(:nth-child(even), .target) {
-    background-color: peachpuff;
-} */
+@import url('https://fonts.googleapis.com/css?family=Niramit');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic|Niramit');
 
-/* 
-li:not(.target){
-    background-color: peachpuff;
-} */
-
-/*
 :root{
-    --awesomeColor: #3498db;
+    --colorOne: #D0EDF5;
+    --colorTwo: #E2F0D6;
+    --colorThree: #FCF8B9;
+    --colorFour: #EBEBEB;
+    --colorFive: #F5C2C2;
+    --colorSix: #E2F0D6;
+
+}
+
+body{
+    font-family: 'Niramit', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+ul,li {
+    margin: 0;
+    padding: 0;
+}
+
+.threeGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+    grid-gap: 20px;
+}
+
+.fourGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.footer__item {
+    display: flex;
+    justify-content: center;
+
+}
+
+header{
+    margin-top: 80px;
+}
+
+.header .header__column{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.header__nav div {
+    margin-bottom: 10px;
+    font-weight: 900;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.header__nav li {
+    color: rgba(0, 0, 0, 0.4);
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.header__nav li:last-child{
+    margin-bottom: 0px;
+}
+
+.header h1 {
+    margin-left: 30px;
+    font-size: 3rem;
+}
+
+
+.grid .grid__item {
+    background-size: cover;
+    background-position: center center;
+}
+
+.grid .grid__item:first-child {
+    background-color: var(--colorOne);
+    grid-row: span 2;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.grid .grid__item .grid__item__box {
+    padding-top: 40px;
+    padding-left: 20px;
+}
+
+.grid .grid__item .grid__item__box span{
+    color: rgba(0, 0, 0, 0.4);
+    text-decoration: underline;
+}
+
+.grid .grid__item .grid__item__box p {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.grid .grid__item:first-child .grid__item__box:nth-child(2) {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 40px;
 }
 
 
 
-a:first-child{
-    color:var(--awesomeColor);
+.grid .grid__item:nth-child(2) {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-image: url(https://i5.walmartimages.com/dfw/4ff9c6c9-d2e9/k2-_42ea213d-55a9-4a8f-b12d-1ebc9741bb96.v1.jpg?odnWidth=912&odnHeight=500&odnBg=ffffff);
 }
 
-@custom-selector :--headers h1,h2,h3,h4,h5,h6;
-
-:--headers{
-    color: #9b59b6;
+.grid .grid__item:nth-child(3) {
+    background-color: var(--colorTwo);
 }
 
-@custom-media --ipad-size (650px <= width <= 800px);
-
-@media (--ipad-size) {
-    body {
-        background-color: peachpuff;
-    }
+.grid .grid__item:nth-child(4) {
+    grid-row: span 2;
+    background-image: url(https://i.pinimg.com/564x/6d/3a/36/6d3a36fa2f9614a71ec690137823f06e.jpg);
 }
 
-*/
-main {
-    background-color: blue;
-    & section{
-        width: 80%;
-        background-color: red;
-        & li {
-            width: 80%;
-            background-color: yellow;
-            & a{
-                
-                color: green;
-                &:hover {
-                    font-size: 2rem;
-                }
-            }
-        }
-    }
+.grid .grid__item:nth-child(5) {
+    background-color: var(--colorThree);
 }
+
+.grid .grid__item:nth-child(6) {
+    background-color: var(--colorFour);
+}
+
+.grid .grid__item:nth-child(7) {
+    background-image: url(https://i.pinimg.com/564x/6d/3a/36/6d3a36fa2f9614a71ec690137823f06e.jpg);
+}
+
+.grid .grid__item:nth-child(8) {
+    grid-row: span 2;
+    grid-column: span 2;
+    background-color: var(--colorFive);
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.grid .grid__item:nth-child(8) .grid__item__box:nth-child(2){
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 40px;
+}
+
+
+
+.grid .grid__item:nth-child(9) {
+    grid-row: span 2;
+    background-image: url(https://i.pinimg.com/564x/11/9b/e8/119be8c5f02d6f1f5ed676f1ab208246.jpg);
+}
+
+.grid .grid__item:nth-child(10) {
+    grid-row: span 2;
+    grid-column: span 2;
+    background-image: url(https://cb2.scene7.com/is/image/CB2/062818_interiors_home?wid=1680&qlt=60);
+}
+
+.grid .grid__item:nth-child(11) {
+    background-image: url(https://www.westelm.com/weimgs/rk/images/dp/ecm/201837/0382/001/002.jpg)
+}
+
+.grid .grid__item:nth-child(12) {
+    background-image: url(https://i.pinimg.com/564x/a2/d2/22/a2d2224823ab632487354ffdacac8eaf.jpg)
+    
+}
+
+.grid .grid__item:nth-child(13) {
+    grid-area: span 2 / span 2;
+    background-color: var(--colorSix);
+}
+
+.grid .grid__item:nth-child(14) {
+    background-image: url(https://i.pinimg.com/564x/dd/b0/fb/ddb0fb1d286acc1d0f7432f5d2a97e08.jpg);
+}
+
+.grid .grid__item:nth-child(15) {
+    background-image: url(https://i.pinimg.com/564x/65/96/56/659656c01a6f2e7b22372ef9749c52a5.jpg);
+}
+
+.footer__item__span {
+    font-family: 'Niramit', sans-serif;
+font-family: 'Nanum Gothic', sans-serif;
+    margin-top: 200px;
+    margin-bottom: 150px;
+}
+
