@@ -23,3 +23,12 @@ a:first-child{
 :--headers{
     color: #9b59b6;
 }
+
+@custom-media --ipad-size (650px <= width <= 800px);
+
+@media (--ipad-size) {
+    body {
+        background-color: peachpuff;
+    }
+}
+
