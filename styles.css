@@ -7,7 +7,7 @@ li:not(.target){
     background-color: peachpuff;
 } */
 
-
+/*
 :root{
     --awesomeColor: #3498db;
 }
@@ -32,3 +32,22 @@ a:first-child{
     }
 }
 
+*/
+main {
+    background-color: blue;
+    & section{
+        width: 80%;
+        background-color: red;
+        & li {
+            width: 80%;
+            background-color: yellow;
+            & a{
+                
+                color: green;
+                &:hover {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
