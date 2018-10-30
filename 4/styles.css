@@ -51,10 +51,11 @@ body{
     background: #3498db;
     top: 90%;
     left: -110%;
+    
 }
 
 .btn:hover::before{
-    animation: aaa 0.7s 1;
+    animation: aaa 0.7s;
     left: -10%;
     top: -10%;
 }
